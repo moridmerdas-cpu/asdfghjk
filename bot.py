@@ -13,7 +13,7 @@ from telegram.ext import (
 
 # ========= تنظیمات =========
 TOKEN = os.environ.get("BOT_TOKEN")
-ADMINS = [11111111, 22222222]  # آیدی عددی ادمین‌ها
+ADMINS = [601668306, 8588773170]  # آیدی عددی ادمین‌ها
 WEBHOOK_PATH = "/webhook"
 WEBHOOK_URL = os.environ.get("WEBHOOK_URL") + WEBHOOK_PATH
 
@@ -152,3 +152,4 @@ async def telegram_webhook(req: Request):
     update = Update.de_json(data, tg_app.bot)
     await tg_app.process_update(update)
     return {"ok": True}
+
